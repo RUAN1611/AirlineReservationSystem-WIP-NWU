@@ -1,0 +1,83 @@
+﻿@model FlightVM
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-primary">
+                Details of Flight @Model.Flight.Id
+            </h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>
+                            <strong>Information Criteria</strong>
+                        </td>
+                        <td>
+                            <strong>Value</strong>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Aircraft
+                        </td>
+                        <td>
+                            @Model.AircraftView.Name
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Origin Airport
+                        </td>
+                        <td>
+                            @Model.OriginAirportView.Name
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Destination Airport
+                        </td>
+                        <td>
+                            @Model.DestinationAirportView.Name
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Departure Time
+                        </td>
+                        <td>
+                            @Model.Flight.DepartureTime
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Arrival Time
+                        </td>
+                        <td>
+                            @Model.Flight.ArrivalTime
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Status
+                        </td>
+                        <td>
+                            @Model.Flight.Status
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Number of Employees Assigned To Flight
+                        </td>
+                        <td>
+                            @Model.CountEmployees Employees
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

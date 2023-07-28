@@ -1,0 +1,61 @@
+﻿@model Aircraft
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-primary">
+                Create Aircraft
+            </h2>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="Name" class="my-2"></label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="Manufacturer" class="my-2"></label>
+                    <input asp-for="Manufacturer" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="DateRegistered" class="my-2"></label>
+                    <input asp-for="DateRegistered" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="SerialNumber" class="my-2"></label>
+                    <input asp-for="SerialNumber" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="OriginalPrice" class="my-2"></label>
+                    <input asp-for="OriginalPrice" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="TravelRange" class="my-2"></label>
+                    <input asp-for="TravelRange" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="MaxCruiseSpeed" class="my-2"></label>
+                    <input asp-for="MaxCruiseSpeed" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="FuelEconomy" class="my-2"></label>
+                    <input asp-for="FuelEconomy" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="TotalNoOfSeats" class="my-2"></label>
+                    <input asp-for="TotalNoOfSeats" class="form-control" />
+                </div>
+                <div class="row my-4 align-content-center justify-content-center">
+                    <div class="btn-group w-75 align-content-center justify-content-center">
+                        <button type="submit" class="btn btn-secondary mx-2">
+                            Create Aircraft
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-secondary mx-2">
+                            Go Back To List
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

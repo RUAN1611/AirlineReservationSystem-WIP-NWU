@@ -1,0 +1,38 @@
+﻿@model Airport
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-primary">
+                Delete Airport
+            </h2>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <input asp-for="Id" hidden />
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="Name" class="my-2"></label>
+                    <input asp-for="Name" disabled class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="City" class="my-2"></label>
+                    <input asp-for="City" disabled class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="Province" class="my-2"></label>
+                    <input asp-for="Province" disabled class="form-control" />
+                </div>
+                <div class="row my-4 align-content-center justify-content-center">
+                    <div class="btn-group w-75 align-content-center justify-content-center">
+                        <button type="submit" class="btn btn-danger mx-2">
+                            Delete Airport
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-danger mx-2">
+                            Go Back To List
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

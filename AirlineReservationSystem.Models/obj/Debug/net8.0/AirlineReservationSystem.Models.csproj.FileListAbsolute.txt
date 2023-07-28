@@ -1,0 +1,15 @@
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\bin\Debug\net8.0\AirlineReservationSystem.Models.deps.json
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\bin\Debug\net8.0\AirlineReservationSystem.Models.runtimeconfig.json
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\bin\Debug\net8.0\AirlineReservationSystem.Models.dll
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\bin\Debug\net8.0\AirlineReservationSystem.Models.pdb
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\obj\Debug\net8.0\AirlineReservationSystem.Models.csproj.AssemblyReference.cache
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\obj\Debug\net8.0\AirlineReservationSystem.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\obj\Debug\net8.0\AirlineReservationSystem.Models.AssemblyInfoInputs.cache
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\obj\Debug\net8.0\AirlineReservationSystem.Models.AssemblyInfo.cs
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\obj\Debug\net8.0\AirlineReservationSystem.Models.csproj.CoreCompileInputs.cache
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\obj\Debug\net8.0\AirlineReservationSystem.Models.dll
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\obj\Debug\net8.0\refint\AirlineReservationSystem.Models.dll
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\obj\Debug\net8.0\AirlineReservationSystem.Models.pdb
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\obj\Debug\net8.0\AirlineReservationSystem.Models.genruntimeconfig.cache
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\obj\Debug\net8.0\ref\AirlineReservationSystem.Models.dll
+D:\Users\Ruan\source\repos\AirlineReservationSystem\AirlineReservationSystem.Models\obj\Debug\net8.0\AirlineReservationSystem.Models.sourcelink.json

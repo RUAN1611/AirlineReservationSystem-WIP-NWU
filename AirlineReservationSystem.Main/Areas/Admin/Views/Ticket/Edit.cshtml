@@ -1,0 +1,48 @@
+﻿@model TicketVM
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-primary">
+                Edit Ticket
+            </h2>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <input asp-for="Ticket.Id" hidden />
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="Ticket.SeatNo" class="my-2"></label>
+                    <input asp-for="Ticket.SeatNo" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="Ticket.Price" class="my-2"></label>
+                    <input asp-for="Ticket.Price" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="Ticket.IsAdult" class="my-2"></label>
+                    <select asp-for="Ticket.IsAdult" class="form-control">
+                        <option disabled selected>-- Adult - True or False? --</option>
+                        <option>True</option>
+                        <option>False</option>
+                    </select>
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="ReservationList" class="my-2"></label>
+                    <select asp-for="Ticket.ReservationId" asp-items="@Model.ReservationList" class="form-control">
+                        <option disabled selected>--Select Reservation--</option>
+                    </select>
+                </div>
+                <div class="row my-4 align-content-center justify-content-center">
+                    <div class="btn-group w-75 align-content-center justify-content-center">
+                        <button type="submit" class="btn btn-secondary mx-2">
+                            Edit Flight
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-secondary mx-2">
+                            Go Back To List
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

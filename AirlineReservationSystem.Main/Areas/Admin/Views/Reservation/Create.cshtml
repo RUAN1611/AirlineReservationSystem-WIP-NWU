@@ -1,0 +1,41 @@
+﻿@model ReservationVM
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-primary">
+                Add Reservation
+            </h2>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="FlightList" class="my-2"></label>
+                    <select asp-for="Reservation.FlightId" asp-items="@Model.FlightList" class="form-control">
+                        <option disabled selected>--Select Aircraft--</option>
+                    </select>
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="CustomerList" class="my-2"></label>
+                    <select asp-for="Reservation.CustomerId" asp-items="@Model.CustomerList" class="form-control">
+                        <option disabled selected>--Select Origin Airport--</option>
+                    </select>
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="Reservation.Status" class="my-2"></label>
+                    <input asp-for="Reservation.Status" class="form-control" />
+                </div>
+                <div class="row my-4 align-content-center justify-content-center">
+                    <div class="btn-group w-75 align-content-center justify-content-center">
+                        <button type="submit" class="btn btn-secondary mx-2">
+                            Add Reservation
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-secondary mx-2">
+                            Go Back To List
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+﻿@model FlightVM
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-primary">
+                Edit Flight
+            </h2>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <input asp-for="Flight.Id" hidden />
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="AircraftList" class="my-2"></label>
+                    <select asp-for="Flight.AircraftId" asp-items="@Model.AircraftList" class="form-control">
+                        <option disabled selected>--Select Aircraft--</option>
+                    </select>
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="OriginAirportList" class="my-2"></label>
+                    <select asp-for="Flight.OriginAirportId" asp-items="@Model.OriginAirportList" class="form-control">
+                        <option disabled selected>--Select Origin Airport--</option>
+                    </select>
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="DestinationAirportList" class="my-2"></label>
+                    <select asp-for="Flight.DestinationAirportId" asp-items="@Model.DestinationAirportList" class="form-control">
+                        <option disabled selected>--Select Destination Airport--</option>
+                    </select>
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="Flight.DepartureTime" class="my-2"></label>
+                    <input asp-for="Flight.DepartureTime" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="Flight.ArrivalTime" class="my-2"></label>
+                    <input asp-for="Flight.ArrivalTime" class="form-control" />
+                </div>
+                <div class="row my-2 px-lg-4 px-md-3">
+                    <label asp-for="Flight.Status" class="my-2"></label>
+                    <input asp-for="Flight.Status" class="form-control" />
+                </div>
+                <div class="row my-4 align-content-center justify-content-center">
+                    <div class="btn-group w-75 align-content-center justify-content-center">
+                        <button type="submit" class="btn btn-secondary mx-2">
+                            Edit Flight
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-secondary mx-2">
+                            Go Back To List
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

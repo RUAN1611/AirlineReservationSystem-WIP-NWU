@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Reservation>
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 mt-3">
+            <h2 class="text-primary">
+                List of Reservations
+            </h2>
+        </div>
+        <div class="col-6 text-end mt-3">
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Add Reservation
+            </a>
+        </div>
+    </div>
+    <table class="table table-bordered table-striped my-4">
+        <thead>
+            <tr>
+                <th>
+                    Reservation ID
+                </th>
+                <th>
+                    Flight ID - Date Of Departure
+                </th>
+                <th>
+                    Customer Full Name
+                </th>
+                <th>
+                    Date Created
+                </th>
+                <th>
+                    Status
+                </th>
+                <th>
+
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var obj in Model)
+            {
+                <tr>
+                    <td>
+                        @obj.Id
+                    </td>
+                    <td>
+                        @obj.FlightId - @obj.Flight.DepartureTime
+                    </td>
+                    <td>
+                        @obj.Customer.FirstName @obj.Customer.LastName
+                    </td>
+                    <td>
+                        @obj.DateCreated
+                    </td>
+                    <td>
+                        @obj.Status
+                    </td>
+                    <td>
+                        <div class="btn-group w-100 align-content-center justify-content-center" role="group">
+                            <a asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-secondary mx-2">
+                                <i class="bi bi-pencil-square"></i> Edit
+                            </a>
+                            <a asp-action="Details" asp-route-id="@obj.Id" class="btn btn-info mx-2">
+                                <i class="bi bi-info-circle"></i> Details
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger mx-2">
+                                <i class="bi bi-x-square"></i> Delete
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

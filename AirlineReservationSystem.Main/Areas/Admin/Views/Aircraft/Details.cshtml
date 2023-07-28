@@ -1,0 +1,107 @@
+﻿@model Aircraft
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="text-primary">
+                Details of @Model.Name
+            </h2>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <td>
+                            <strong>Aircraft Attribute</strong>
+                        </td>
+                        <td>
+                            <strong>Value</strong>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Aircraft Identification Number
+                        </td>
+                        <td>
+                            @Model.Id
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aircraft Name
+                        </td>
+                        <td>
+                            @Model.Name
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aircraft Manufacturer
+                        </td>
+                        <td>
+                            @Model.Manufacturer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aircraft Date Registered
+                        </td>
+                        <td>
+                            @Model.DateRegistered
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aircraft Serial Number
+                        </td>
+                        <td>
+                            @Model.SerialNumber
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aircraft Original Price (ZAR | RAND)
+                        </td>
+                        <td>
+                            @Model.OriginalPrice.ToString("c")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aircraft Travel Range (KM)
+                        </td>
+                        <td>
+                            @Model.TravelRange
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aircraft Max Cruise Speed (KM/H)
+                        </td>
+                        <td>
+                            @Model.MaxCruiseSpeed
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aircraft Fuel Economy (L/KM)
+                        </td>
+                        <td>
+                            @Model.FuelEconomy
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Aircraft Total No. Of Seats
+                        </td>
+                        <td>
+                            @Model.TotalNoOfSeats
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

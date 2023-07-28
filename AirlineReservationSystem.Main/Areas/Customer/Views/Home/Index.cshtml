@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Flight>
+
+<div class="container">
+    <div class="row">
+        @foreach (var obj in Model)
+        {
+            <div class="card col-lg-3 mx-1 my-1" style="width: 18rem;">
+                <div class="card-body text-center">
+                    <h5 class="text-primary">From @obj.OriginAirport.City, @obj.OriginAirport.Name to @obj.DestinationAirport.City, @obj.DestinationAirport.Name</h5>
+                    <hr class="mx-1"/>
+                    <p>@obj.DepartureTime.ToString("D") - @obj.ArrivalTime.ToString("D")</p>
+                    <p>from</p>
+                    <h5 class="text-danger">R 14,999.00</h5>
+                    <button type="submit" class="btn btn-secondary">Book Now</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>

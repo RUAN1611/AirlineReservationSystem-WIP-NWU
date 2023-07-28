@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33513.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineReservationSystem.Main", "AirlineReservationSystem.Main\AirlineReservationSystem.Main.csproj", "{E4D5A4E8-A6CF-4409-950D-D9E4103DA8EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineReservationSystem.DataAccess", "AirlineReservationSystem.DataAccess\AirlineReservationSystem.DataAccess.csproj", "{5DA36DF2-0406-4BE2-A5D5-FE4A586C5BA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineReservationSystem.Models", "AirlineReservationSystem.Models\AirlineReservationSystem.Models.csproj", "{82B613E0-500A-4BA5-B5A2-186B83277267}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4D5A4E8-A6CF-4409-950D-D9E4103DA8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4D5A4E8-A6CF-4409-950D-D9E4103DA8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4D5A4E8-A6CF-4409-950D-D9E4103DA8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4D5A4E8-A6CF-4409-950D-D9E4103DA8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DA36DF2-0406-4BE2-A5D5-FE4A586C5BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA36DF2-0406-4BE2-A5D5-FE4A586C5BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA36DF2-0406-4BE2-A5D5-FE4A586C5BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA36DF2-0406-4BE2-A5D5-FE4A586C5BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82B613E0-500A-4BA5-B5A2-186B83277267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82B613E0-500A-4BA5-B5A2-186B83277267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82B613E0-500A-4BA5-B5A2-186B83277267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82B613E0-500A-4BA5-B5A2-186B83277267}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85659EF5-B7A0-4805-8B27-FDE09D3BB0D9}
+	EndGlobalSection
+EndGlobal
