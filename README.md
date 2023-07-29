@@ -1,4 +1,4 @@
-# AirlineReservationSystem-WIP-NWU Development
+# AirlineReservationSystem-WIP-NWU Production
 This is one of my initial projects, developed using the ASP.NET Core framework and implementing the Model-View-Controller (MVC) pattern. 
 A lot of editing is required and there is much work to do. The purpose for this application was to create an airline reservation system 
 where customers can order flight tickets based on domestic flights (South Africa).
